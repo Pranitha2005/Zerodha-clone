@@ -214,7 +214,7 @@ app.post('/newOrder',async(req,res)=>{
 
   });
   newOrder.save();
-  re.send("Order saved");
+  res.send("Order saved");
 });
 
 const PORT = process.env.PORT || 3002;
